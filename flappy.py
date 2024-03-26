@@ -54,7 +54,7 @@ while True:
         canos = canosAleatorios(LARGURA * 2)
         grupoCano.add(canos[0])
         grupoCano.add(canos[1])
-
+       
     grupoPassaro.update()
     grupoChao.update()
     grupoCano.update()

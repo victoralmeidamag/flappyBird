@@ -16,13 +16,13 @@ ESPACO_CANO = 200
 class Bird(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.images = [pygame.image.load('passarocima.png').convert_alpha(),
+        self.images = [pygame.image.load('passarobaixo.png').convert_alpha(),
                        pygame.image.load('passaromeio.png').convert_alpha(),
-                       pygame.image.load('passarobaixo.png').convert_alpha()]
+                       pygame.image.load('passarocima.png').convert_alpha()]
         
         self.velocidade = VELOCIDADE
         self.atualizaImg = 0
-        self.image = pygame.image.load('passarobaixo.png').convert_alpha()
+        self.image = pygame.image.load('passaromeio.png').convert_alpha()
         self.mask = pygame.mask.from_surface(self.image)
         self.rect = self.image.get_rect()
         self.rect[0] = LARGURA / 2
